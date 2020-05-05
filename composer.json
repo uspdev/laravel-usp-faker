@@ -1,0 +1,31 @@
+{
+    "name": "uspdev/laravel-usp-faker",
+    "description": "Uma biblioteca para geração de faker no contexto USP",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Thiago Gomes Veríssimo",
+            "email": "verissimotgv@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uspdev\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uspdev\\FakerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "orchestra/testbench": "^4.0 || ^5.0",
+        "phpunit/phpunit": "^8.3 || ^9.0"
+    }
+}
