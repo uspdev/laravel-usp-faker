@@ -3,11 +3,17 @@
 namespace Uspdev\Provider;
 
 use Faker\Provider\Base;
+use Uspdev\Utils\RandomReplicado;
 
 class ReplicadoFaker extends Base
 {
     public function docente()
     {
-        return '5385361';
+        return RandomReplicado::docente();
+    }
+
+    public function graduacao()
+    {
+        return RandomReplicado::graduacao();
     }
 }
