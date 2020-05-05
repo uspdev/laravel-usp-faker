@@ -8,6 +8,6 @@ class ReplicadoFaker extends Base
 {
     public function docente()
     {
-        return 'teste';
+        return '5385361';
     }
 }
