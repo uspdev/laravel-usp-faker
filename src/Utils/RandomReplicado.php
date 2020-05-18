@@ -18,7 +18,7 @@ class RandomReplicado
      * e pode ser melhorada
      */
     public static function auxLocalizaPessoa($tipvinext) {
-        $codundclg = getenv('REPLICADO_CODUND');
+        $codundclg = getenv('REPLICADO_CODUNDCLG');
 
         /** 1. Enquanto não tivermos dados retornados na consulta
          *  executaremos esse loop.
