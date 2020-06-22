@@ -12,6 +12,18 @@ class RandomReplicado
         return self::auxLocalizaPessoa('Aluno de Gradua');
     }
 
+    public static function posgraduacao() {
+        return self::auxLocalizaPessoa('ALUNOPOS');
+    }
+
+    public static function servidor() {
+        return self::auxLocalizaPessoa('Servidor');
+    }
+
+    public static function estagiario() {
+        return self::auxLocalizaPessoa('ESTAGIARIORH');
+    }
+
     /**
      * Retorna o codpes  USP "aleatório" no contexto da unidade
      * A lógica para a condição de "aleatório" ainda não está muito boa

@@ -12,8 +12,23 @@ class ReplicadoFaker extends Base
         return RandomReplicado::docente();
     }
 
+    public function servidor()
+    {
+        return RandomReplicado::servidor();
+    }
+
+    public function estagiario()
+    {
+        return RandomReplicado::estagiario();
+    }
+
     public function graduacao()
     {
         return RandomReplicado::graduacao();
+    }
+
+    public function posgraduacao()
+    {
+        return RandomReplicado::posgraduacao();
     }
 }

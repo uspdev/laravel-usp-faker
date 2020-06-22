@@ -6,4 +6,10 @@ em seed no laravel.
 Também carrega automaticamente tudo no contexto de:
 *\Faker\Provider\pt_BR\*.
 
-TODO: documentar melhor
+Fakers disponíveis:
+
+- $faker->docente();
+- $faker->servidor();
+- $faker->estagiario();
+- $faker->graduacao();
+- $faker->posgraduacao();
