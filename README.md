@@ -13,3 +13,5 @@ Fakers disponíveis:
 - $faker->estagiario();
 - $faker->graduacao();
 - $faker->posgraduacao();
+- $faker->bempatrimoniado_informatica;
+- $faker->bempatrimoniado;

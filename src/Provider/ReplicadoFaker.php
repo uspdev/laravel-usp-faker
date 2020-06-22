@@ -31,4 +31,14 @@ class ReplicadoFaker extends Base
     {
         return RandomReplicado::posgraduacao();
     }
+
+    public function bempatrimoniado()
+    {
+        return RandomReplicado::bempatrimoniado();
+    }
+
+    public function bempatrimoniado_informatica()
+    {
+        return RandomReplicado::bempatrimoniado_informatica();
+    }
 }
