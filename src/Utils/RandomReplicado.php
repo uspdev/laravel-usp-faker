@@ -13,7 +13,7 @@ class RandomReplicado
     }
 
     public static function posgraduacao() {
-        return self::auxLocalizaPessoa('ALUNOPOS');
+        return self::auxLocalizaPessoa('Aluno de P');
     }
 
     public static function servidor() {
@@ -21,7 +21,7 @@ class RandomReplicado
     }
 
     public static function estagiario() {
-        return self::auxLocalizaPessoa('ESTAGIARIORH');
+        return self::auxLocalizaPessoa('Estagia');
     }
 
     public static function bempatrimoniado(){
@@ -47,8 +47,8 @@ class RandomReplicado
             /* 2. Vamos filtrar baseado em nompes */
             $nompesFiltro = self::nompesFiltro();
             /* 3. Vamos selecionar 5 apenas - performance */
-            $query = "SELECT TOP 5 codpes FROM LOCALIZAPESSOA 
-                    WHERE tipvinext LIKE '%{$tipvinext}%' 
+            $query = "SELECT TOP 5 codpes FROM LOCALIZAPESSOA
+                    WHERE tipvinext LIKE '%{$tipvinext}%'
                     AND sitatl = 'A'
                     AND codundclg = {$codundclg}
                     AND nompes LIKE '%{$nompesFiltro}%'";
@@ -74,7 +74,7 @@ class RandomReplicado
             /* 2. Vamos filtrar baseado em nompes */
             $filtro = rand(999, 9999);
             /* 3. Vamos selecionar 10 apenas - performance */
-            $query = "SELECT TOP 10 numpat FROM BEMPATRIMONIADO 
+            $query = "SELECT TOP 10 numpat FROM BEMPATRIMONIADO
                     WHERE stabem = 'Ativo'
                     AND str(numpat) LIKE '%{$filtro}%'";
             $result = \Uspdev\Replicado\DB::fetchAll($query);
@@ -90,7 +90,7 @@ class RandomReplicado
         do {
             $aux = $informatica[array_rand($informatica)];
             $filtro = rand(99, 999);
-            $query = "SELECT TOP 10 numpat FROM BEMPATRIMONIADO 
+            $query = "SELECT TOP 10 numpat FROM BEMPATRIMONIADO
                     WHERE stabem = 'Ativo'
                     AND coditmmat = $aux
                     AND str(numpat) LIKE '%{$filtro}%'";
