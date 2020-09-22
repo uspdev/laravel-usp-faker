@@ -7,6 +7,8 @@ Instalação:
 
     composer require uspdev/laravel-usp-faker
 
+Dependência: https://github.com/uspdev/replicado
+
 Também carrega automaticamente tudo no contexto de:
 *\Faker\Provider\pt_BR\*.
 
