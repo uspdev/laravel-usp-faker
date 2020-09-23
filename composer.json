@@ -9,7 +9,6 @@
         }
     ],
     "require": {
-        "fzaninotto/faker": "^1.5",
         "uspdev/replicado": "^1.5"
     },
     "autoload": {
@@ -24,9 +23,5 @@
             ]
         }
     },
-    "minimum-stability": "stable",
-    "require-dev": {
-        "orchestra/testbench": "^4.0 || ^5.0",
-        "phpunit/phpunit": "^8.3 || ^9.0"
-    }
+    "minimum-stability": "stable"
 }
